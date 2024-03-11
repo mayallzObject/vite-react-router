@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 
-export const ProtectedLayout = () => (
+export const AuthLayout = () => (
   <>
-    <h1>Protected Routes</h1>
+    <h1>Dashboard Routes</h1>
     <Outlet />
   </>
 );
