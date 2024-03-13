@@ -1,10 +1,9 @@
 import { Outlet } from 'react-router-dom';
 
 const AppLayout = () => (
-  <>
-    <h1>Dashboard Routes</h1>
+  <div className="app-layout">
     <Outlet />
-  </>
+  </div>
 );
 
 export default AppLayout;
