@@ -2,7 +2,6 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from 'react-router-dom';
-import './App.css';
 import { privateRoutes, publicRoutes } from './routes';
 
 const router = createBrowserRouter([
