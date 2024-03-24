@@ -1,15 +1,19 @@
+@import './abstracts/_colors';
 @import './abstracts/variables';
 
+
+@import './base/base';
 @import './base/reset';
 
 @import './layout/navigation';
+@import './layout/content';
+@import './layout/footer';
 
 @import './components/buttons';
 
 @import './pages/app';
-@import './pages/login';
-@import './pages/profile';
-
-@import './themes/theme';
+@import './pages/auth';
 
 @import './utils/mixins';
+
+

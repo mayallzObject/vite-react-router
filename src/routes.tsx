@@ -24,32 +24,32 @@ export const publicRoutes: RouteObject[] = [
           return { Component: DashboardPage };
         },
       },
-    ],
-  },
-  {
-    path: 'login',
-    async lazy() {
-      const { AuthLayout } = await import('./layouts/AuthLayout');
-      return { Component: AuthLayout };
-    },
-    children: [
       {
-        index: true,
+        path: 'login',
         async lazy() {
-          const { LoginPage } = await import(
-            './pages/login/loginpage.component'
-          );
-          return { Component: LoginPage };
+          const { AuthLayout } = await import('./layouts/AuthLayout');
+          return { Component: AuthLayout };
         },
-      },
-      {
-        path: 'signup',
-        async lazy() {
-          const { SignupPage } = await import(
-            './pages/signup/signuppage.component'
-          );
-          return { Component: SignupPage };
-        },
+        children: [
+          {
+            index: true,
+            async lazy() {
+              const { LoginPage } = await import(
+                './pages/login/loginpage.component'
+              );
+              return { Component: LoginPage };
+            },
+          },
+          {
+            path: 'signup',
+            async lazy() {
+              const { SignupPage } = await import(
+                './pages/signup/signuppage.component'
+              );
+              return { Component: SignupPage };
+            },
+          },
+        ],
       },
     ],
   },
@@ -57,7 +57,7 @@ export const publicRoutes: RouteObject[] = [
 
 export const privateRoutes: RouteObject[] = [
   {
-    path: '/profile',
+    path: 'profile',
     async lazy() {
       const { ProtectedLayout } = await import(
         './layouts/ProtectedLayout'

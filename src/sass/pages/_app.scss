@@ -1,3 +1,7 @@
-.app-layout {
-  background-color: yellow;
+#app {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  background-color: theme-var($--theme-background);
 }
+

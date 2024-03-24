@@ -1,5 +1,1 @@
-export const HomePage = () => (
-  <div>
-    <div>HomePage</div>
-  </div>
-);
+export const HomePage = () => <div>HomePage</div>;

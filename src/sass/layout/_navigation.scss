@@ -1,0 +1,25 @@
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  column-gap: 2em;
+  background-color: #96C2DB;
+}
+
+.navbar-item {
+  margin: 0;
+  padding: 0;
+  color: paleturquoise;
+  text-decoration: none;
+
+  &__active {
+    color: gray;
+  };
+
+  &__pending {
+    color: darkgray;
+  };
+};
