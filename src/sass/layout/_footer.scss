@@ -1,0 +1,7 @@
+@import '../abstracts/variables';
+
+.footer {
+  margin-top: auto;
+  padding: 50px 20px;
+  background-color: theme-var($--theme-primary);
+}
